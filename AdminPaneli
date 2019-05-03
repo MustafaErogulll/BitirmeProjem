@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace KutuphaneTakip
+{
+    public partial class AdminPaneli : Form
+    {
+        public AdminPaneli()
+        {
+            InitializeComponent();
+        }
+
+        private void btnKitaplariListele_Click(object sender, EventArgs e)
+        {
+            KitaplariListele frm4 = new KitaplariListele();
+            frm4.Show();
+            this.Hide();
+        }
+
+        private void btnCikisYap_Click(object sender, EventArgs e)
+        {
+            Form1 frm5 = new Form1();
+            frm5.Show();
+            this.Hide();
+
+        }
+    }
+}
